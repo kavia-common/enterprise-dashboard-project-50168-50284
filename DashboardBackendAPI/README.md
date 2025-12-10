@@ -5,7 +5,9 @@ FastAPI service for the Enterprise Dashboard.
 Quick start (local):
 - Ensure Python 3.10+ and a virtual environment.
 - Install dependencies: `pip install -r requirements.txt`
-- Run the server: `python -m src.api.main`
+- Run the server (from DashboardBackendAPI/):
+  - Via uvicorn module import: `uvicorn main:app --host 0.0.0.0 --port 3001`
+  - Or directly via python module: `python -m src.api.main`
 
 Environment variables (set via .env by orchestrator):
 - REACT_APP_PORT: Port to bind the FastAPI app (default: 3001)
